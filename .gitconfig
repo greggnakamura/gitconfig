@@ -18,7 +18,9 @@
   dif = diff
   dfw = diff -w
   dc = diff --cached
-  lg = log -p
+  lgs = log -p
+  fix = commit --amend -C HEAD
+  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
   lol = log --graph --decorate --pretty=oneline --abbrev-commit
   lola = log -- graph --decorate --pretty=oneline --abbrev-commit --all
   ls = ls-files
